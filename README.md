@@ -1,9 +1,7 @@
 # ML Ops Assignment 2 – Digit Classification Pipeline
 
 ## 👨‍💻 Team Members
-- Shubham Bagwari: p22cs201@iitj.ac.in  
-- Divyaansh Mertia: m23cse013@iitj.ac.in  
-
+- Ashwini Gerigenti: g24ai1082@iitj.ac.in  
 ---
 
 ## 📌 Objective
