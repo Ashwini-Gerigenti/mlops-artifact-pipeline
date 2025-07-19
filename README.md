@@ -24,17 +24,31 @@ This project implements a CI/CD pipeline for a digit classification model using 
 
 .
 ├── config/
+
 │ └── config.json # Hyperparameters
+
 ├── src/
+
 │ ├── train.py # Train model
+
 │ ├── inference.py # Predict using saved model
+
 │ └── utils.py # Utility functions (if any)
+
 ├── tests/
+
 │ └── test_train.py # Unit tests for training pipeline
+
 ├── .github/
+
 │ └── workflows/
+
 │ ├── train.yml # CI for training
+
 │ ├── test.yml # CI for testing
+
 │ └── inference.yml # CI for inference with artifact passing
+
 ├── requirements.txt
+
 └── README.md
