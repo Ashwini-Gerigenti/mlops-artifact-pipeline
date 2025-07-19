@@ -22,3 +22,24 @@ model.fit(X, y)
 # Save model
 joblib.dump(model, "model_train.pkl")
 print("Model trained and saved as model_train.pkl")
+
+def train_model(X, y, config):
+    model = LogisticRegression(
+        C=config["C"],
+        solver=config["solver"],
+        max_iter=config["max_iter"]
+    )
+    model.fit(X, y)
+    return model
+
+if __name__ == "__main__":
+    from joblib import dump
+    digits = load_digits()
+    X, y = digits.data, digits.target
+
+    with open("config/config.json", "r") as f:
+        config = json.load(f)
+
+    model = train_model(X, y, config)
+    dump(model, "model_train.pkl")
+    print("Model trained and saved as model_train.pkl")
